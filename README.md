@@ -26,3 +26,15 @@
 | 设置与托盘 | 自定义键盘或鼠标侧键热键。关闭窗口会保存改动并隐藏到托盘，托盘菜单「退出」会保存设置并结束进程。 |
 
 开机自启可在设置页按需启用。设置和录制库信息位于 `%LOCALAPPDATA%\MouseClicker`。
+
+## 从源码构建
+
+准备 Windows x64 和 .NET 8 SDK，在仓库根目录执行：
+
+```powershell
+dotnet build .\MouseClicker.csproj -c Release
+```
+
+Release 构建输出在 `bin\Release\net8.0-windows\`。需要可直接双击运行的单文件版时，从 [Releases](https://github.com/Yun-369/MouseClicker/releases/latest) 下载。
+
+本地项目的原说明和历次记录见 [开发历史](./docs/开发历史.md)，历史测试条目见 [验收清单](./docs/acceptance-checklist.md)。
